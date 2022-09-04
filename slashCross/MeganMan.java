@@ -1,7 +1,11 @@
+import java.util.LinkedList;
+import java.util.List;
+
 public class MeganMan implements Fighter{
 
     private Item actual;
     private double life;
+    private List<Item> availablePowers = new LinkedList<Item>();
 
     @Override
     public Item consumePowers(Item power) {

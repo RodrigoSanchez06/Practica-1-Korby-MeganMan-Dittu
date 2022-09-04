@@ -1,6 +1,11 @@
+import java.util.LinkedList;
+import java.util.List;
+
 public class Korby implements Fighter{
+
     private double life = 100;
     private Item actual;
+    private List<Item> availablePowers = new LinkedList<Item>();
     
     @Override
     public Item consumePowers(Item power) {
