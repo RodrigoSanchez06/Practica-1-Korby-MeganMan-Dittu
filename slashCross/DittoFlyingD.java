@@ -1,16 +1,15 @@
-public class DittoEternalMemories implements Item{
-
+public class DittoFlyingD implements Item{
     private String name;
     private String technicalDetail;
     private String narration;
     private double damagePercentage;
     private double defensePercentage;
 
-    public DittoEternalMemories(){
-        this.name = "DittoEternalMemories";
-        this.technicalDetail="Dittu fuerza en su memoria a visualizar a su más grande rival, obteniendo la apariencia y poderes de un dragon de tamaño modesto";
-        this.damagePercentage=1.3;
-        this.defensePercentage=0.6;
+    public DittoFlyingD(){
+        this.name = "DittoFlyingD";
+        this.technicalDetail="Dittu adquiere las propiedades de una planta alucinogena, su ataque consiste en quemarse a si mismo haciendo que el rival este expuesto a su humo, recibiendo daño. Al defenderse, Dittu se quema completamente haciendose intangible pero recibe daño por el fuego";
+        this.damagePercentage=1.2;
+        this.defensePercentage=1;
     }
 
     @Override
@@ -65,7 +64,7 @@ public class DittoEternalMemories implements Item{
     @Override
     public String getCinematic() {
         // TODO Auto-generated method stub
-        return this.narration="Dittu, salta por los aires, se concentra y antes de caer al piso, cierra los ojos y evoca el recuerdo del dragon Calcifer, su mas grande rival obteniendo asi sus poderes";
+        return this.narration="Dittu ve a lo lejos a su mejor amigo Marihuanachard y copia sus habilidades";
     }
 
     @Override
@@ -76,11 +75,10 @@ public class DittoEternalMemories implements Item{
     }
 
     public String DefenseNarration(){
-        return "Dittu endurece sus escamas de dragon y recibe menos daño del ataque";
+        return "Dittu se quema completamente y se mantiene en estado gaseoso pero recibio daño al quemarse";
     }
 
     public String AtackNarration(){
-        return "Dittu inhala una bocanada de aire y exhala un poderoso aliento de fuego";
+        return "Dittu quema sus extremos alucinogenos ocasionando daño y confusion al rival";
     }
-    
 }

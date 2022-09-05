@@ -11,7 +11,7 @@ public class SuperSonic implements Item{
     }
 
     @Override
-    public void setName() {
+    public void setName(String name) {
         // TODO Auto-generated method stub
         
     }
@@ -23,7 +23,7 @@ public class SuperSonic implements Item{
     }
 
     @Override
-    public void setDamage(int damage) {
+    public void setDamage(double damage) {
         // TODO Auto-generated method stub
         
     }
@@ -53,13 +53,13 @@ public class SuperSonic implements Item{
     }
 
     @Override
-    public String getNarration() {
+    public String getCinematic() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public void setNarration(String narration) {
+    public void setCinematic(String narration) {
         // TODO Auto-generated method stub
         
     }

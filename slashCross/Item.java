@@ -1,12 +1,12 @@
 public interface Item {
     public String getName();
-    public void setName();
+    public void setName(String newName);
     public double getDamage();
-    public void setDamage(int damage);
+    public void setDamage(double damage);
     public double getDefense();
     public void setDefense(double defensePercentage);
     public String getTechnicalDetail();
     public void setTechnicalDetail(String description);
-    public String getNarration();
-    public void setNarration(String narration);
+    public String getCinematic();
+    public void setCinematic(String narration);
 }

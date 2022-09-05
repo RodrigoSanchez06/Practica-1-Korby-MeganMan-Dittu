@@ -4,12 +4,13 @@ import java.util.List;
 public class Dittu implements Fighter{
 
     private Item actual;
-    private double life;
+    private double life=100;
+    private final double DAÑO_BASE=10;
     private List<Item> availablePowers = new LinkedList<Item>();
 
     @Override
     public Item consumePowers(Item power) {
-        // TODO Auto-generated method stub
+        // TODO Auto-generated me
         return null;
     }
 
