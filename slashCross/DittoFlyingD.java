@@ -74,11 +74,11 @@ public class DittoFlyingD implements Item{
         this.narration=narration;
     }
 
-    public String DefenseNarration(){
+    public String defenseNarration(){
         return "Dittu se quema completamente y se mantiene en estado gaseoso pero recibio daño al quemarse";
     }
 
-    public String AtackNarration(){
+    public String attackNarration(){
         return "Dittu quema sus extremos alucinogenos ocasionando daño y confusion al rival";
     }
 }

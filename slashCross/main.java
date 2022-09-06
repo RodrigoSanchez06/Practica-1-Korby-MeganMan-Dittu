@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+public class main{
+    public static void main(String[] args) {
+        
+    }
+}
+=======
 public class main {
     public static void main(String[] args) {
         Arena arena = new Arena();
@@ -12,3 +19,4 @@ public class main {
         Viewer thirdViewer = new Viewer(003, korby, arena, "ChaoGod");
     }
 }
+>>>>>>> 7156d457c88ee7e645620823f63d616247049c7f

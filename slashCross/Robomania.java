@@ -84,4 +84,12 @@ public class Robomania implements Item{
         return "Dittu se altera y da un empujon";
     }
 
+    public String attackNarration(){
+        return null;
+    }
+
+    public String defenseNarration(){
+        return null;
+    }
+
 }

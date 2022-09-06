@@ -83,5 +83,13 @@ public class Matrix implements Item{
     public String AtackNarration(){
         return "Dittu se altera y da un empujon";
     }
+
+    public String attackNarration(){
+        return null;
+    }
+
+    public String defenseNarration(){
+        return null;
+    }
     
 }
