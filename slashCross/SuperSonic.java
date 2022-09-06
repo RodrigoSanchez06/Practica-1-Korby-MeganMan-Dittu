@@ -63,5 +63,13 @@ public class SuperSonic implements Item{
         // TODO Auto-generated method stub
         
     }
+
+    public String attackNarration(){
+        return null;
+    }
+
+    public String defenseNarration(){
+        return null;
+    }
     
 }

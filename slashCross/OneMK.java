@@ -64,4 +64,12 @@ public class OneMK implements Item{
         
     }
 
+    public String attackNarration(){
+        return null;
+    }
+
+    public String defenseNarration(){
+        return null;
+    }
+
 }

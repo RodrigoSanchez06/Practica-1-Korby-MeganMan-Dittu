@@ -9,4 +9,6 @@ public interface Item {
     public void setTechnicalDetail(String description);
     public String getCinematic();
     public void setCinematic(String narration);
+    public String attackNarration();
+    public String defenseNarration();
 }

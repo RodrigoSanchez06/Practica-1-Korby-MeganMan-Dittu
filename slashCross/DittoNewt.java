@@ -10,7 +10,7 @@ public class DittoNewt implements Item{
         this.name = "DittoNewt";
         this.technicalDetail="Dittu se transforma en un fluido no Newtoniano haciendo que al ser atacado, ese mismo ataque no le hace daño a él sino al rival pero su ataque se disminuye";
         this.damagePercentage=0.5;
-        this.defensePercentage=0.1;
+        this.defensePercentage=0.2;
     }
 
     @Override
@@ -76,11 +76,11 @@ public class DittoNewt implements Item{
         this.narration=narration;
     }
 
-    public String DefenseNarration(){
+    public String defenseNarration(){
         return "Dittu absorbió el ataque y lo reflejo *Excepcional*";
     }
 
-    public String AtackNarration(){
+    public String attackNarration(){
         return "Dittu se altera y da un empujon";
     }
     

@@ -1,67 +1,85 @@
 public class Kbomb implements Item{
 
     private String name;
-    private String tecnicalDetail;
+    private String technicalDetail;
     private String narration;
+    private double damagePercentage;
+    private double defensePercentage;
 
-    @Override
-    public String getName() {
-        // TODO Auto-generated method stub
-        return null;
+    public Kbomb(){
+        this.name = "Kbomb";
+        this.technicalDetail="Korby absorbe un enemigo con poderes pirotecnicos, explota al contacto del rival y se defiende con una pared de minibombas";
+        this.damagePercentage=1.3;
+        this.defensePercentage=0.7;
     }
 
     @Override
-    public void setName(String name) {
-        // TODO Auto-generated method stub
-        
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public void setName(String newName) {
+        if(newName == null)
+            throw new NullPointerException();
+        this.name = newName;
     }
 
     @Override
     public double getDamage() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.damagePercentage;
     }
 
     @Override
     public void setDamage(double damage) {
-        // TODO Auto-generated method stub
-        
+        if(0 <= damage || damage >1.5)
+            throw new IllegalArgumentException();
+        this.damagePercentage=damage;
     }
 
     @Override
     public double getDefense() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.defensePercentage;
     }
 
     @Override
     public void setDefense(double defensePercentage) {
-        // TODO Auto-generated method stub
-        
+        if(defensePercentage <= 0 || defensePercentage>=1)
+            throw new IllegalArgumentException();
+        this.defensePercentage=defensePercentage;
     }
 
     @Override
     public String getTechnicalDetail() {
         // TODO Auto-generated method stub
-        return null;
+        return this.technicalDetail;
     }
 
     @Override
     public void setTechnicalDetail(String description) {
-        // TODO Auto-generated method stub
-        
+        if(description == null)
+            throw new NullPointerException();
+        this.technicalDetail=description;
     }
 
     @Override
     public String getCinematic() {
         // TODO Auto-generated method stub
-        return null;
+        return this.narration="De las gradas, sale un Bakugito e intenta meterse en la pelea pero es absorbido por Korby";
     }
 
     @Override
     public void setCinematic(String narration) {
-        // TODO Auto-generated method stub
-        
+        if(narration == null)
+            throw new NullPointerException();
+        this.narration=narration;
     }
-    
+
+    public String defenseNarration(){
+        return "Korby levanta una pared de petardos y disminuye el daño recibido";
+    }
+
+    public String attackNarration(){
+        return "Korby corre hacia el oponente y lanza una serie de jabs explosivos";
+    }    
 }
