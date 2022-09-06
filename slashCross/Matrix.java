@@ -1,67 +1,87 @@
 public class Matrix implements Item{
 
     private String name;
-    private String tecnicalDetail;
+    private String technicalDetail;
     private String narration;
+    private double damagePercentage;
+    private double defensePercentage;
 
-    @Override
-    public String getName() {
-        // TODO Auto-generated method stub
-        return null;
+    public Matrix(){
+        this.name = "Matrix";
+        this.technicalDetail="";
+        this.damagePercentage=0.5;
+        this.defensePercentage=0.1;
     }
 
     @Override
-    public void setName(String name) {
-        // TODO Auto-generated method stub
-        
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public void setName(String newName) {
+        if(newName == null)
+            throw new NullPointerException();
+        this.name = newName;
     }
 
     @Override
     public double getDamage() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.damagePercentage;
     }
 
     @Override
     public void setDamage(double damage) {
-        // TODO Auto-generated method stub
-        
+        if(0 <= damage || damage >1.5)
+            throw new IllegalArgumentException();
+        this.damagePercentage=damage;
     }
 
     @Override
     public double getDefense() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.defensePercentage;
     }
 
     @Override
     public void setDefense(double defensePercentage) {
-        // TODO Auto-generated method stub
-        
+        if(defensePercentage <= 0 || defensePercentage>=1)
+            throw new IllegalArgumentException();
+        this.defensePercentage=defensePercentage;
     }
 
     @Override
     public String getTechnicalDetail() {
         // TODO Auto-generated method stub
-        return null;
+        return this.technicalDetail;
     }
 
     @Override
     public void setTechnicalDetail(String description) {
-        // TODO Auto-generated method stub
+        if(description == null)
+            throw new NullPointerException();
+        this.technicalDetail=description;
         
     }
 
     @Override
     public String getCinematic() {
         // TODO Auto-generated method stub
-        return null;
+        return this.narration="En la arena de la batalla que esta, Dittu se da cuenta que hay un laboratorio cerca con un Chiponkomon de pruebas, al cual le estaban experimentando fluidos no Newtonianos y obtiene su poder";
     }
 
     @Override
     public void setCinematic(String narration) {
-        // TODO Auto-generated method stub
-        
+        if(narration == null)
+            throw new NullPointerException();
+        this.narration=narration;
+    }
+
+    public String DefenseNarration(){
+        return "Dittu absorbió el ataque y lo reflejo *Excepcional*";
+    }
+
+    public String AtackNarration(){
+        return "Dittu se altera y da un empujon";
     }
     
 }
